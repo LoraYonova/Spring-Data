@@ -14,9 +14,6 @@ public class Category extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String name;
 
-//    @ManyToMany(mappedBy = "id")
-//    private Set<Book> books;
-
     public Category() {
     }
 
@@ -31,14 +28,6 @@ public class Category extends BaseEntity {
     public void setName(String name) {
         this.name = name;
     }
-
-//    public Set<Book> getBooks() {
-//        return books;
-//    }
-//
-//    public void setBooks(Set<Book> books) {
-//        this.books = books;
-//    }
 
 
     @Override
